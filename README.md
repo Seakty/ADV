@@ -72,12 +72,14 @@ Each week brings a new lesson and a new practical. Each one is written, refined,
 ```text
 ADV
 │
-├── ❖ dataset/        The data behind the lessons
+├── ❖ dataset/                        The data behind the lessons
 │
-├── ❖ TP/             Practical work, one notebook per week
-│   └── output/       Results and generated files
+├── ❖ TP/                             Practical work, one notebook per week
+│   └── output/                       Results and generated files
 │
-└── ❖ README.md       The cover you are reading now
+├── ❖ supervised-finetuning-summarise/  Course summary & SFT study notes
+│
+└── ❖ README.md                       The cover you are reading now
 ```
 
 <div align="center">
@@ -99,11 +101,11 @@ ADV
 
 A chapter is added with every new assignment.
 
-|  Week  | Chapter                  |          Notebook           | Theme                       | Status |
-| :----: | :----------------------- | :-------------------------: | :-------------------------- | :----: |
-| **01** | Foundations              |         `TP1.ipynb`         | `Add theme`                 |   ✅   |
-| **02** | Objects & Data Pipelines | [`TP2.ipynb`](TP/TP2.ipynb) | OOP and data transformation |   ✅   |
-| **03** | _Coming soon_            |         `TP3.ipynb`         | —                           |   ⏳   |
+|  Week  | Chapter                  |                   Notebook                    | Theme                                                                                                                        | Status |
+| :----: | :----------------------- | :-------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------- | :----: |
+| **01** | Foundations              |                  `TP1.ipynb`                  | `Add theme`                                                                                                                  |   ✅   |
+| **02** | Objects & Data Pipelines |          [`TP2.ipynb`](TP/TP2.ipynb)          | OOP and data transformation                                                                                                  |   ✅   |
+| **03** | Supervised Fine-Tuning   | [`Gemma3_(4B).ipynb`](<TP/Gemma3_(4B).ipynb>) | LLM fine-tuning (Gemma 3, LoRA, PEFT) & [Study Notes](supervised-finetuning-summarise/supervised_fine_tuning_study_notes.md) |   ✅   |
 
 <sub>✅ Submitted &nbsp;·&nbsp; 🚧 In progress &nbsp;·&nbsp; ⏳ Upcoming</sub>
 
@@ -117,12 +119,13 @@ A chapter is added with every new assignment.
 
 <br>
 
-| File              | Description                  |
-| :---------------- | :--------------------------- |
-| `sample_data.csv` | Raw data used in the lessons |
+| File                      | Description                                                                |
+| :------------------------ | :------------------------------------------------------------------------- |
+| `sample_data.csv`         | Raw data used in the lessons                                               |
+| `dataasilida_cleaned.csv` | Khmer banking Q&A dataset used for Gemma 3 SFT (Experiment 1)              |
+| `gbharti/finance-alpaca`  | Hugging Face English finance Q&A subset used for comparison (Experiment 2) |
 
 </details>
-
 <br>
 
 ---
